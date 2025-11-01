@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Metalno</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #fafafa;
+				font-weight: 500;
+				margin: 0;
+				padding: 0;
+			}
+			.container {
+				max-width: 1660px;
+				margin: 0 auto;
+				padding: 96px 87px;
+				overflow: hidden;
+			}
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			.section1 .descr h1 {
+				font-weight: bold;
+				font-size: 55px;
+				line-height: 100%;
+				letter-spacing: -2%;
+				text-transform: uppercase;
+			}
+			.section1 .descr h2 {
+				font-weight: 500;
+				font-size: 38.45px;
+				line-height: 100%;
+				letter-spacing: -2%;
+				vertical-align: bottom;
+				text-transform: uppercase;
+			}
+			.contact-link {
+				font-family: 'Courier New', Courier, monospace;
+				font-size: 32.96px;
+				line-height: 100%;
+				text-transform: uppercase;
+				color: #000000;
+				text-decoration: none;
+			}
+			.text_bottom-gallery {
+				font-family: 'Courier New', Courier, monospace;
+				font-weight: 400;
+				font-size: 36px;
+				line-height: 100%;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			.line7,
+			.line8,
+			.line9 {
+				height: 2px;
+				width: 100%;
+				background-color: #000000;
+			}
+			.section8 h2 {
+				font-weight: bold;
+				font-size: 80px;
+				line-height: 100%;
+				text-transform: uppercase;
+				color: #000000;
+				max-width: 85%;
+			}
+			.section8 p {
+				font-weight: 400;
+				font-size: 43px;
+				line-height: 100%;
+			}
+			.text_info-help {
+				font-weight: 400;
+				font-size: 43.95px;
+				line-height: 100%;
+				color: #000000;
+			}
+			.text_info-help h3 {
+				font-weight: 500;
+			}
+			.info-advantage_top {
+				font-weight: 400;
+				font-size: 43.95px;
+				line-height: 100%;
+				color: #000000;
+			}
+			.info-advantage_top h3 {
+				font-weight: 500;
+			}
+			.info_footer2 h2 {
+				font-weight: bold;
+				font-size: 80px;
+				line-height: 100%;
+				text-transform: uppercase;
+				max-width: 100%;
+			}
+			.info_footer2 button {
+				font-weight: bold;
+				font-size: 46.69px;
+				line-height: 100%;
+				text-transform: uppercase;
+			}
+			.info_left2 {
+				font-weight: 400;
+				font-size: 43px;
+				line-height: 100%;
+				color: #000;
+			}
+			.info_left2 h4 {
+				font-weight: 500;
+			}
+			.footer_contact nav a,
+			.qr2 a,
+			.qr2 p {
+				font-family: 'Courier New', Courier, monospace;
+				font-weight: 400;
+				font-size: 32.96px;
+				line-height: 100%;
+				letter-spacing: -2%;
+				text-transform: uppercase;
+				color: #000000;
+				text-decoration: none;
+			}
+			.footer_title h3 {
+				font-weight: bold;
+				font-size: 46.69px;
+				line-height: 100%;
+				text-transform: uppercase;
+			}
+
+			.table {
+				display: table;
+				width: 100%;
+			}
+			.table-row {
+				display: table-row;
+			}
+			.table-cell {
+				display: table-cell;
+				vertical-align: top;
+			}
+			.descr-table {
+				width: 100%;
+				margin-top: 45px;
+			}
+			.contact-table {
+				width: 100%;
+				margin-top: 113px;
+			}
+			.gallery-table {
+				width: 100%;
+				margin-top: 95px;
+			}
+			.gallery-row {
+				margin-bottom: 22px;
+			}
+			.help-info-table {
+				width: 100%;
+				min-height: 80vh;
+			}
+			.advantage-table {
+				width: 100%;
+			}
+			.footer-contacts-table {
+				width: 100%;
+				margin-top: 100px;
+			}
+			.footer-title-table {
+				width: 100%;
+				margin-top: 113px;
+			}
+
+			.footer_descr-tit {
+				font-size: 46px;
+				line-height: 100%;
+				margin: 0;
+			}
+
+			@media (max-width: 1280px) {
+				.gallery-table tr:first-child td:nth-child(4),
+				.gallery-table tr:last-child td:nth-child(1) {
+					display: none;
+				}
+
+				.gallery-table tr td {
+					width: 33.33% !important;
+				}
+
+				.contact-link {
+					font-size: 16px !important;
+				}
+				.text_bottom-gallery {
+					margin-top: 40px !important;
+					font-size: 24px !important;
+				}
+
+				.section8 h2 {
+					font-size: 48px !important;
+				}
+
+				.section8 p {
+					margin-bottom: 20px !important;
+					font-size: 24px !important;
+				}
+
+				.text_bottom-gallery {
+					margin-top: 40px !important;
+					font-size: 48px !important;
+				}
+
+				.block_descr-sect8 {
+					margin-top: 40px !important;
+				}
+
+				.text_info-help {
+					font-size: 24px !important;
+				}
+
+				.info-advantage_top p,
+				.info-advantage_top h3 {
+					font-size: 24px !important;
+				}
+
+				.container {
+					padding: 20px !important;
+				}
+
+				.info_left2 {
+					font-size: 28px !important;
+				}
+
+				.info_footer2 h2 {
+					font-size: 48px !important;
+				}
+			}
+
+			@media (max-width: 1024px) {
+				.container {
+					padding: 60px 40px !important;
+				}
+
+				.section9 .help-info-table tr {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+				}
+				.section9 .help-info-table td {
+					width: 100% !important;
+					padding-left: 0 !important;
+				}
+				.section9 .help-info-table td:first-child {
+					order: 1;
+				}
+				.section9 .help-info-table td:last-child {
+					order: 2;
+					margin-bottom: 40px;
+				}
+
+				.section9 .help-info-table table {
+					width: 100%;
+				}
+				.section9 .help-info-table table td {
+					width: 100% !important;
+					padding: 0 10px !important;
+				}
+				.section9 .help-info-table table img {
+					width: 100% !important;
+					height: auto !important;
+				}
+
+				.section10 .advantage-table tr {
+					display: flex;
+					flex-direction: column;
+				}
+				.section10 .advantage-table td {
+					width: 100% !important;
+					padding-right: 0 !important;
+				}
+				.section10 .advantage-table td:first-child {
+					order: 2;
+				}
+				.section10 .advantage-table td:last-child {
+					order: 1;
+					margin-bottom: 40px;
+				}
+				.section10 .advantage-table img {
+					width: 100% !important;
+					height: auto !important;
+				}
+
+				.footer-contacts-table tr {
+					display: flex;
+					flex-direction: column;
+				}
+				.footer-contacts-table td {
+					width: 100% !important;
+				}
+				.footer-contacts-table td:first-child {
+					order: 2;
+					margin-top: 40px;
+				}
+				.footer-contacts-table td:last-child {
+					order: 1;
+					text-align: left !important;
+				}
+
+				.section1 .descr h1 {
+					font-size: 40px !important;
+				}
+				.section1 .descr h2 {
+					font-size: 28px !important;
+				}
+				.contact-link {
+					font-size: 20px !important;
+				}
+				.text_bottom-gallery {
+					font-size: 24px !important;
+				}
+				.section8 h2 {
+					font-size: 48px !important;
+					max-width: 100% !important;
+				}
+				.section8 p {
+					font-size: 28px !important;
+				}
+				.text_info-help,
+				.info-advantage_top {
+					font-size: 28px !important;
+				}
+				.info_footer2 h2 {
+					font-size: 48px !important;
+				}
+				.info_footer2 button {
+					font-size: 28px !important;
+					width: 100% !important;
+					max-width: 400px !important;
+					height: 70px !important;
+				}
+				.info_left2 {
+					font-size: 28px !important;
+				}
+				.footer_contact nav a,
+				.qr2 a,
+				.qr2 p {
+					font-size: 20px !important;
+				}
+				.footer_title h3 {
+					font-size: 32px !important;
+				}
+
+				.footer_descr-tit {
+					font-size: 20px !important;
+				}
+			}
+
+			@media (max-width: 768px) {
+				.container {
+					padding: 40px 20px !important;
+				}
+
+				.descr-table tr {
+					display: flex;
+					flex-direction: column;
+				}
+				.descr-table td {
+					width: 100% !important;
+					text-align: left !important;
+				}
+
+				.contact-table tr {
+					display: flex;
+					flex-direction: column;
+				}
+				.contact-table td {
+					width: 100% !important;
+					text-align: left !important;
+					margin-bottom: 10px;
+				}
+
+				.gallery-table tr {
+					display: flex;
+					gap: 0 10px;
+				}
+				.gallery-table td {
+					width: 100% !important;
+					margin-bottom: 0;
+					padding: 0 !important;
+				}
+
+				.section9 .help-info-table table tr {
+					display: flex;
+					flex-direction: column;
+				}
+				.section9 .help-info-table table td {
+					width: 100% !important;
+					margin-bottom: 20px;
+					padding: 0 !important;
+				}
+
+				.footer-title-table tr {
+					display: flex;
+					flex-direction: column;
+				}
+				.footer-title-table td {
+					width: 100% !important;
+					text-align: center !important;
+					margin-bottom: 20px;
+				}
+				.footer-title-table img {
+					width: 100% !important;
+					max-width: 400px !important;
+				}
+
+				.section1 .descr h1 {
+					font-size: 32px !important;
+				}
+				.section1 .descr h2 {
+					font-size: 24px !important;
+				}
+				.contact-link {
+					font-size: 16px !important;
+				}
+				.text_bottom-gallery {
+					font-size: 18px !important;
+				}
+				.section8 h2 {
+					font-size: 36px !important;
+				}
+				.section8 p {
+					font-size: 22px !important;
+				}
+				.text_info-help,
+				.info-advantage_top {
+					font-size: 22px !important;
+				}
+				.info_footer2 h2 {
+					font-size: 36px !important;
+				}
+				.info_footer2 button {
+					font-size: 24px !important;
+					height: 60px !important;
+				}
+				.info_left2 {
+					font-size: 22px !important;
+				}
+				.footer_contact nav a,
+				.qr2 a,
+				.qr2 p {
+					font-size: 16px !important;
+				}
+				.footer_title h3 {
+					font-size: 24px !important;
+				}
+
+				.descr-table {
+					margin-top: 30px !important;
+				}
+				.contact-table {
+					margin-top: 60px !important;
+				}
+				.gallery-table {
+					margin-top: 60px !important;
+				}
+				.text_bottom-gallery {
+					margin-top: 60px !important;
+					font-size: 16px !important;
+				}
+				.block_descr-sect8 {
+					margin-top: 20px !important;
+				}
+				.block_descr-sect8 p {
+					font-size: 14px !important;
+				}
+				.line8,
+				.line9 {
+					margin: 60px 0 !important;
+				}
+				.footer-contacts-table {
+					margin-top: 60px !important;
+				}
+				.footer-title-table {
+					margin-top: 60px !important;
+				}
+
+				.section8 h2 {
+					font-size: 24px !important;
+				}
+				.text_info-help p,
+				.text_info-help h3 {
+					font-size: 16px !important;
+				}
+
+				.section9 .help-info-table td:last-child,
+				.section10 .advantage-table td:last-child {
+					margin-bottom: 10px !important;
+				}
+
+				.info-advantage_top p {
+					font-size: 16px !important;
+				}
+
+				.info-advantage_top {
+					margin-bottom: 20px !important;
+				}
+
+				.info_footer2 h2 {
+					font-size: 24px !important;
+					margin-bottom: 20px !important;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="section1">
+				<img src="images/title.svg" alt="Metalno" style="width: 100%" />
+
+				<table class="descr-table">
+					<tr>
+						<td style="vertical-align: bottom">
+							<h1>новый бренд в мире дизайна интерьеров</h1>
+						</td>
+						<td
+							style="
+								vertical-align: bottom;
+								text-align: right;
+								white-space: nowrap;
+							"
+						>
+							<h2>(2025)</h2>
+						</td>
+					</tr>
+				</table>
+
+				<table class="contact-table">
+					<tr>
+						<td>
+							<a
+								href="mailto:hello@metalno.ru"
+								class="contact-link"
+								style="margin-right: 30px"
+								>hello@metalno.ru</a
+							>
+							<a href="http://www.metalno.ru" class="contact-link"
+								>www.metalno.ru</a
+							>
+						</td>
+						<td style="text-align: right">
+							<a href="tel:+78124158186" class="contact-link">+78124158186</a>
+						</td>
+					</tr>
+				</table>
+
+				<div class="line7"></div>
+
+				<!-- Gallery -->
+				<table class="gallery-table">
+					<tr class="gallery-row">
+						<td style="width: 25%; padding: 0 11px">
+							<img src="/images/card/card3.png" alt="" style="width: 100%" />
+						</td>
+						<td style="width: 25%; padding: 0 11px">
+							<img src="/images/card/card5.png" alt="" style="width: 100%" />
+						</td>
+						<td style="width: 25%; padding: 0 11px">
+							<img src="/images/card/card4.png" alt="" style="width: 100%" />
+						</td>
+						<td style="width: 25%; padding: 0 11px">
+							<img src="/images/card/card7.png" alt="" style="width: 100%" />
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 25%; padding: 0 11px">
+							<img src="/images/card/card8.png" alt="" style="width: 100%" />
+						</td>
+						<td style="width: 25%; padding: 0 11px">
+							<img src="/images/card/card6.png" alt="" style="width: 100%" />
+						</td>
+						<td style="width: 25%; padding: 0 11px">
+							<img src="/images/card/card2.png" alt="" style="width: 100%" />
+						</td>
+						<td style="width: 25%; padding: 0 11px">
+							<img src="/images/card/card1.png" alt="" style="width: 100%" />
+						</td>
+					</tr>
+				</table>
+
+				<p class="text_bottom-gallery" style="margin-top: 111px">
+					радиаторы | конвекторы | полотенцесушители | metalno | kzto | zvd |
+					primoclima
+				</p>
+
+				<div class="line7"></div>
+			</div>
+
+			<div class="section8">
+				<h2>Будущее нельзя предсказать, но его можно создать.</h2>
+				<div class="block_descr-sect8" style="margin-top: 71px">
+					<p style="margin-bottom: 46px">
+						Мы видим мир, где дизайн становится нормой, дом — местом силы, а
+						тепло и красота воспринимаются естественно.
+					</p>
+					<p>
+						Мы понимаем, что для корпоративных клиентов важна не только цена, но
+						и полный спектр сопутствующих услуг, позволяющих оптимизировать
+						затраты и время.
+					</p>
+				</div>
+				<div class="line8" style="margin: 100px 0 92px 0"></div>
+			</div>
+
+			<div class="section9">
+				<table class="help-info-table">
+					<tr>
+						<td style="vertical-align: bottom; width: 50%">
+							<table>
+								<tr>
+									<td style="padding-right: 10px">
+										<img
+											src="images/bg6.png"
+											alt=""
+											style="width: 100%; height: auto"
+										/>
+									</td>
+									<td style="padding-left: 10px">
+										<img
+											src="images/bg7.png"
+											alt=""
+											style="width: 100%; height: auto"
+										/>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td style="vertical-align: bottom; width: 50%; padding-left: 100px">
+							<div class="text_info-help">
+								<h3>
+									Мы готовы взять на себя все заботы, связанные с оснащением
+									ваших объектов:
+								</h3>
+								<p>
+									- Профессиональный подбор оборудования с учетом специфики
+									проекта.
+								</p>
+								<p>
+									- Оперативная и бережная доставка до объекта в согласованные
+									сроки.
+								</p>
+								<p>
+									- Покраска радиаторов в любой цвет по каталогу RAL, нанесение
+									логотипа и др.
+								</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<div class="line9" style="margin: 94px 0 107px 0"></div>
+			</div>
+
+			<div class="section10">
+				<table class="advantage-table">
+					<tr>
+						<td style="vertical-align: top; width: 60%; padding-right: 68px">
+							<div class="text_info-advantage">
+								<div class="info-advantage_top" style="margin-bottom: 60px">
+									<h3>Для вашего удобства готовы оперативно предоставить:</h3>
+									<p>- Актуальный прайс-лист с гибкой системой скидок.</p>
+									<p>
+										- Каталоги и 3D-модели оборудования для проектировщиков.
+									</p>
+									<p>
+										- Подробные условия сотрудничества (поставки, оплаты,
+										возврата).
+									</p>
+								</div>
+								<div class="info-advantage_top">
+									<p>
+										Мы верим, что в вещах важна не только форма, но и путь,
+										который они проходят. Это не просто приборы. Это предмет, в
+										котором соединены забота, безопасность и эстетика. И мы
+										хотим, чтобы он стал частью вашей истории.
+									</p>
+								</div>
+							</div>
+						</td>
+						<td style="vertical-align: top; width: 40%">
+							<img
+								src="images/bg8.png"
+								alt=""
+								style="width: 100%; height: auto"
+							/>
+						</td>
+					</tr>
+				</table>
+				<div class="line9" style="margin: 94px 0 107px 0"></div>
+			</div>
+
+			<div class="section4 custom">
+				<div class="info_footer2">
+					<h2 style="margin-bottom: 59px">
+						Мы предлагаем эксклюзивные условия, прямую коммуникацию и
+						ассортимент, который выделяет вас на рынке
+					</h2>
+					<a
+						href="https://api.whatsapp.com/send/?phone=79770897038&text&type=phone_number&app_absent=0"
+						style="text-decoration: none"
+					>
+						<button
+							style="
+								width: 630px;
+								height: 92px;
+								background-color: transparent;
+								border: 1px solid black;
+								padding: 18px;
+								cursor: pointer;
+							"
+						>
+							написать менеджеру
+						</button>
+					</a>
+
+					<table class="footer-contacts-table">
+						<tr>
+							<td style="vertical-align: top; width: 60%">
+								<div class="info_left2">
+									<p>
+										Метально — не только бренд, это сообщество. Мы создаём
+										культуру вокруг дома, где каждый может найти вдохновение и
+										новые решения. Мы стремимся к тому, чтобы дизайн стал
+										нормой, а детали определяют атмосферу.
+									</p>
+									<h4 style="margin-top: 50px">
+										Приглашаем Вас стать частью нашего пути!
+									</h4>
+								</div>
+							</td>
+							<td style="vertical-align: top; width: 40%; text-align: right">
+								<div class="qr2">
+									<a href="https://t.me/metalnomedia">telegram</a>
+									<p>наш сайт</p>
+									<img
+										src="/images/qr.png"
+										alt=""
+										style="width: 250px; margin-bottom: 22px"
+									/>
+								</div>
+								<div class="footer_contact">
+									<nav>
+										<a href="tel:+78124158186">+78124158186</a><br />
+										<a href="http://www.metalno.ru">www.metalno.ru</a>
+									</nav>
+								</div>
+							</td>
+						</tr>
+					</table>
+
+					<table class="footer-title-table">
+						<tr>
+							<td style="vertical-align: bottom; width: 40%">
+								<img
+									src="images/title.svg"
+									alt="Metalno"
+									style="width: 100%; max-width: 647px"
+								/>
+							</td>
+							<td style="vertical-align: bottom; width: 40%">
+								<div
+									style="height: 2px; background-color: #000000; margin: 0 25px"
+								></div>
+							</td>
+							<td
+								style="vertical-align: bottom; width: 20%; white-space: nowrap"
+							>
+								<h3 class="footer_descr-tit">see you soon</h3>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
