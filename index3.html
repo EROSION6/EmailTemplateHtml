@@ -15,7 +15,7 @@
 			.container {
 				max-width: 1660px;
 				margin: 0 auto;
-				padding: 96px 87px;
+				padding: 96px 87px 0 87px;
 				overflow: hidden;
 			}
 			img {
@@ -180,12 +180,12 @@
 				margin: 0;
 			}
 
-			@media (max-width: 1280px) {
-				.gallery-table tr:first-child td:nth-child(4),
-				.gallery-table tr:last-child td:nth-child(1) {
-					display: none;
-				}
+			.container_block-info_text{
+				display: flex;
+				flex-direction: column;
+			}
 
+			@media (max-width: 1280px) {
 				.help-info-table {
 					min-height: 51vh !important;
 				}
@@ -234,7 +234,7 @@
 				}
 
 				.container {
-					padding: 20px !important;
+					padding: 20px 20px 0px 20px !important;
 				}
 
 				.info_left2 {
@@ -248,13 +248,27 @@
 
 			@media (max-width: 1024px) {
 				.container {
-					padding: 60px 40px !important;
+					padding: 60px 40px 0 40px !important;
 				}
 
-				.section9 .help-info-table tr {
+				.block_help-mobile {
 					width: 100%;
 					display: flex;
 					flex-direction: column;
+				}
+
+				.images-block_mobile {
+					display: flex;
+					flex-direction: row !important;
+					gap: 10px !important;
+				}
+
+
+				.mobile_text-info{
+					min-width: 50% !important;
+				}
+				.images-block_mobile img {
+					max-height: 600px !important;
 				}
 				.section9 .help-info-table td {
 					width: 100% !important;
@@ -300,20 +314,12 @@
 					height: auto !important;
 				}
 
-				.footer-contacts-table tr {
-					display: flex;
-					flex-direction: column;
-				}
 				.footer-contacts-table td {
 					width: 100% !important;
 				}
 				.footer-contacts-table td:first-child {
-					order: 2;
 					margin-top: 40px;
-				}
-				.footer-contacts-table td:last-child {
-					order: 1;
-					text-align: left !important;
+					max-width: 60%;
 				}
 
 				.section1 .descr h1 {
@@ -363,26 +369,30 @@
 				.footer_descr-tit {
 					font-size: 20px !important;
 				}
+
+				.mobile_text-info {
+					display: flex;
+					gap: 10px;
+				}
+
+				.qr2 img {
+					width: 150px !important;
+					height: 150px !important;
+				}
 			}
 
 			@media (max-width: 768px) {
 				.container {
-					padding: 40px 20px !important;
+					padding: 40px 20px 0 20px !important;
 				}
-
-				.descr-table tr {
-					display: flex;
-					flex-direction: column;
+				.images-block_mobile img {
+					min-height: 300px !important;
 				}
 				.descr-table td {
 					width: 100% !important;
 					text-align: left !important;
 				}
 
-				.contact-table tr {
-					display: flex;
-					flex-direction: column;
-				}
 				.contact-table td {
 					width: 100% !important;
 					text-align: left !important;
@@ -518,6 +528,110 @@
 				.info_footer2 h2 {
 					font-size: 24px !important;
 					margin-bottom: 20px !important;
+				}
+
+				.images-block_mobile {
+					display: flex !important;
+				}
+			}
+
+			@media (max-width: 500px) {
+				.descr-table h1,
+				h2 {
+					font-size: 18px !important;
+				}
+
+				.descr-table {
+					margin-top: 0 !important;
+				}
+
+				.images-block_mobile img {
+					min-height: 270px !important;
+				}
+
+				.contact-table {
+					margin-top: 20px !important;
+				}
+
+				.contact-link {
+					font-size: 12px !important;
+				}
+
+				.text_bottom-gallery {
+					font-size: 11px !important;
+				}
+
+				.section8 h2 {
+					font-size: 18px !important;
+					margin-top: 20px !important;
+				}
+
+				.block_descr-sect8 p {
+					font-size: 11px !important;
+				}
+
+				.block_descr-sect8 {
+					margin-top: 0px !important;
+				}
+
+				.info-advantage_top h3 {
+					font-size: 11px !important;
+				}
+				.info-advantage_top p {
+					font-size: 11px !important;
+				}
+
+				.info-advantage_top {
+					margin-bottom: 11px !important;
+				}
+
+				.info_footer2 h2 {
+					font-size: 18px !important;
+					line-height: 120% !important;
+				}
+
+				.info_footer2 button {
+					display: flex !important;
+					align-items: center !important;
+					justify-content: center !important;
+					padding: 3px !important;
+					font-size: 10px !important;
+					height: 23px !important;
+					max-width: 150px !important;
+				}
+
+				.info_left2 p,
+				h4 {
+					font-size: 11px !important;
+				}
+
+				.info_left2 h4 {
+					margin-top: 20px !important;
+				}
+
+				.qr2 img {
+					width: 100px !important;
+					height: 100px !important;
+				}
+
+				.footer_contact nav a,
+				.qr2 a,
+				.qr2 p {
+					font-size: 11px !important;
+				}
+
+				.footer-contacts-table {
+					margin-top: 40px !important;
+				}
+
+				.line8,
+				.line9 {
+					margin: 20px 0 !important;
+				}
+
+				.text_info-help p,
+				.text_info-help h3 {
+					font-size: 11px !important;
 				}
 			}
 		</style>
@@ -757,7 +871,7 @@
 									border="0"
 									width="100%"
 								>
-									<tr>
+									<tr class="block_help-mobile">
 										<td style="vertical-align: bottom; width: 50%">
 											<table
 												cellpadding="0"
@@ -765,7 +879,7 @@
 												border="0"
 												width="100%"
 											>
-												<tr>
+												<tr class="images-block_mobile">
 													<td style="padding-right: 10px">
 														<img
 															src="images/bg6.png"
@@ -797,16 +911,18 @@
 												border="0"
 												width="100%"
 											>
-												<tr>
-													<td>
-														<h3>
+												<tr class='container_block-info_text'>
+													<td class="mobile_text-info">
+														<p>
 															Мы готовы взять на себя все заботы, связанные с
 															оснащением ваших объектов:
-														</h3>
+														</p>
 														<p>
 															- Профессиональный подбор оборудования с учетом
 															специфики проекта.
 														</p>
+													</td>
+													<td class="mobile_text-info">
 														<p>
 															- Оперативная и бережная доставка до объекта в
 															согласованные сроки.

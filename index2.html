@@ -168,14 +168,19 @@
 				margin: 0;
 			}
 
+			.section {
+				padding: 20px !important;
+			}
+
+			.container_title-table {
+				padding: 0 20px;
+			}
+
 			@media screen and (max-width: 1280px) {
 				.email-container {
 					padding: 0 40px;
 				}
 
-				.section {
-					padding: 20px 0 0 0 !important;
-				}
 				.title {
 					font-size: 32px !important;
 				}
@@ -273,6 +278,16 @@
 					font-size: 16px !important;
 				}
 
+				.button_footer .button {
+					display: flex !important;
+					align-items: center !important;
+					justify-content: center !important;
+					padding: 3px !important;
+					font-size: 10px !important;
+					height: 23px !important;
+					max-width: 150px !important;
+				}
+
 				.margin_line {
 					margin: 10px 0 10px 0 !important;
 				}
@@ -301,15 +316,7 @@
 				}
 
 				.footer-title-table {
-					margin-top: 40px !important;
-				}
-
-				.qr-code {
-					margin-top: 20px !important;
-				}
-
-				.footer-nav {
-					text-align: left !important;
+					margin-top: 0px !important;
 				}
 
 				.team-title {
@@ -353,19 +360,13 @@
 				.footer-left,
 				.footer-right {
 					width: 100% !important;
-					display: block !important;
 				}
 
 				.footer-right table {
 					width: 100% !important;
 				}
 
-				.footer-right td {
-					text-align: left !important;
-				}
-
 				.button_footer {
-					text-align: left !important;
 					padding-top: 30px !important;
 				}
 
@@ -375,18 +376,96 @@
 				}
 
 				.qr-code-container {
-					text-align: left !important;
 					margin-top: 30px !important;
 				}
 
 				.footer-links {
-					text-align: left !important;
 					margin-top: 20px !important;
 				}
 
 				.footer_descr-tit {
 					font-size: 20px !important;
 				}
+			}
+
+			@media screen and (max-width: 500px) {
+				.title,
+				.subtitle {
+					font-size: 18px !important;
+				}
+
+				.section1_pad {
+					margin: 10px 0 10px 0 !important;
+				}
+
+				.contact-link {
+					font-size: 10px !important;
+				}
+
+				.image_bg {
+					height: 40vh !important;
+				}
+				.contact_padd {
+					margin-bottom: 0 !important;
+				}
+				.mission-text {
+					font-size: 12px !important;
+				}
+
+				.team-title {
+					font-size: 14px !important;
+				}
+
+				.team-descr {
+					font-size: 10px !important;
+				}
+
+				.section {
+					margin-top: 20px !important;
+				}
+
+				.block4_padding_image {
+					width: 50% !important;
+					padding-right: 20px !important;
+				}
+
+				.padding_block4 {
+					padding-bottom: 20px !important;
+				}
+
+				.info-text {
+					font-size: 10px !important;
+				}
+
+				.footer-title {
+					font-size: 18px !important;
+				}
+
+				.footer-text,
+				.footer-subtitle {
+					font-size: 10px !important;
+				}
+
+				.qr-code {
+					width: 100px !important;
+					height: 100px !important;
+				}
+
+				.footer-nav {
+					font-size: 10px !important;
+				}
+
+				.footer-links {
+					padding-top: 20px !important;
+				}
+
+				.footer_descr-tit {
+					font-size: 18px !important;
+				}
+			}
+
+			.image_padding {
+				padding: 0 20px !important;
 			}
 		</style>
 	</head>
@@ -491,7 +570,6 @@
 				</td>
 			</tr>
 
-			<!-- Контакты -->
 			<tr>
 				<td>
 					<table
@@ -598,7 +676,6 @@
 				</td>
 			</tr>
 
-			<!-- Миссия -->
 			<tr>
 				<td>
 					<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -619,7 +696,7 @@
 									"
 								>
 									<tr>
-										<td style="padding: 48px; vertical-align: bottom">
+										<td style="vertical-align: bottom">
 											<table
 												width="100%"
 												border="0"
@@ -634,6 +711,7 @@
 															font-size: 46.69px;
 															line-height: 130%;
 															color: #ffffff4d;
+															padding: 48px;
 														"
 													>
 														Радиаторы | Конвекторы | Полотенцесушители
@@ -650,7 +728,6 @@
 				</td>
 			</tr>
 
-			<!-- Команда -->
 			<tr>
 				<td>
 					<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -805,7 +882,10 @@
 												cellpadding="0"
 											>
 												<tr>
-													<td style="padding-bottom: 70px">
+													<td
+														style="padding-bottom: 70px"
+														class="padding_block4"
+													>
 														<table
 															width="100%"
 															border="0"
@@ -1171,7 +1251,7 @@
 			</tr>
 
 			<tr>
-				<td>
+				<td style="" class="container_title-table">
 					<table class="footer-title-table">
 						<tr>
 							<td style="vertical-align: bottom; width: 40%">

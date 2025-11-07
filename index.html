@@ -7,24 +7,21 @@
 		<style>
 			@font-face {
 				font-family: 'TT Norms Pro';
-				src: url('fonts/TTNormsPro-Bold.woff')
-					format('woff');
+				src: url('fonts/TTNormsPro-Bold.woff') format('woff');
 				font-weight: bold;
 				font-style: normal;
 			}
 
 			@font-face {
 				font-family: 'TT Norms Pro';
-				src: url('fonts/TTNormsPro-Medium.woff')
-					format('woff');
+				src: url('fonts/TTNormsPro-Medium.woff') format('woff');
 				font-weight: 500;
 				font-style: normal;
 			}
 
 			@font-face {
 				font-family: 'TT Norms Pro Mono';
-				src: url('fonts/TT-Norms-Pro-Mono-Trial-Regular.woff')
-					format('woff');
+				src: url('fonts/TT-Norms-Pro-Mono-Trial-Regular.woff') format('woff');
 				font-weight: normal;
 				font-style: normal;
 			}
@@ -42,6 +39,10 @@
 
 			.footer-title-table {
 				padding: 80px 20px 0 20px;
+			}
+
+			.mobile-full {
+				padding: 0 5px !important;
 			}
 
 			@media (max-width: 1440px) {
@@ -71,13 +72,9 @@
 			@media only screen and (max-width: 800px) {
 				.mobile-full {
 					width: 100% !important;
-					display: block !important;
 					margin-top: 20px;
 				}
 
-				.links {
-					padding-bottom: 10px;
-				}
 				.mobile-center {
 					text-align: center !important;
 				}
@@ -101,6 +98,20 @@
 				.block_pad {
 					padding: 20px 20px !important;
 				}
+
+				.grid-mobile {
+					display: grid !important;
+					grid-template-columns: 1fr 1fr !important;
+					gap: 20px !important;
+				}
+			}
+
+			.mobile-block {
+				margin-top: 60px !important;
+			}
+
+			.mobile_image {
+				padding-top: 60px !important;
 			}
 
 			@media (max-width: 768px) {
@@ -114,6 +125,120 @@
 
 				.footer_descr-tit {
 					font-size: 20px !important;
+				}
+			}
+
+			@media (max-width: 650px) {
+				.title_wel,
+				.title_wel-num {
+					font-size: 11px !important;
+					margin-top: -40px !important;
+				}
+
+				.links {
+					padding-bottom: 0 !important;
+				}
+
+				.mobile_image {
+					padding-top: 30px !important;
+				}
+
+				.mobile_image img {
+					height: 40vh !important;
+					object-fit: cover !important;
+				}
+
+				.mobile-block a {
+					font-size: 11px !important;
+				}
+
+				.mobile-center {
+					text-align: right !important;
+				}
+
+				.mobile-center a {
+					font-size: 11px !important;
+				}
+
+				.desktop-title {
+					font-size: 14px !important;
+				}
+
+				.desktop-text {
+					font-size: 10px !important;
+				}
+
+				.desktop-catalog_title {
+					font-size: 18px !important;
+				}
+
+				.mobile-full h4 {
+					font-size: 12px !important;
+				}
+				.mobile-full h3 {
+					font-size: 11px !important;
+				}
+
+				.desktop-title_cost {
+					font-size: 18px !important;
+				}
+
+				.desktop-description_cost {
+					font-size: 11px !important;
+				}
+
+				.desktop-title_footer {
+					font-size: 18px !important;
+				}
+
+				.descr_footer {
+					font-size: 10px !important;
+					margin: 20px 0 0 0 !important;
+				}
+
+				.qr_img {
+					width: 100px !important;
+					height: 100px !important;
+				}
+
+				.contact_link {
+					font-size: 10px !important;
+				}
+
+				.button-cont {
+					padding: 3px !important;
+				}
+
+				.qr_image-block {
+					margin-bottom: 20px !important;
+				}
+
+				.footer-title-table {
+					padding: 30px 20px 0 20px;
+				}
+
+				.line_paddings-mobile {
+					padding: 20px !important;
+				}
+			}
+
+			.mobile-x-block3 {
+				display: flex;
+			}
+
+			.mobile-x {
+				display: flex !important;
+			}
+
+			.mobile-block {
+				display: flex !important;
+				margin-top: 20px !important;
+				align-items: end !important;
+			}
+
+			@media (max-width: 420px) {
+				.desktop-description_cost {
+					font-size: 8px !important;
 				}
 			}
 		</style>
@@ -146,7 +271,7 @@
 						<tr>
 							<td style="padding: 40px 20px">
 								<img
-									src="email/images/title.svg"
+									src="images/title.svg"
 									alt="Metalno"
 									width="100%"
 									style="display: block; max-width: 100%"
@@ -155,7 +280,7 @@
 						</tr>
 
 						<tr>
-							<td style="padding: 30px 20px 0 20px">
+							<td style="padding: 0 20px 0 20px">
 								<table width="100%" border="0" cellspacing="0" cellpadding="0">
 									<tr>
 										<td
@@ -185,6 +310,7 @@
 												line-height: 100%;
 												text-transform: uppercase;
 											"
+											class="title_wel-num"
 										>
 											(2025)
 										</td>
@@ -194,7 +320,7 @@
 						</tr>
 
 						<tr>
-							<td style="padding: 60px 20px 0 20px">
+							<td style="padding: 0 20px 0 20px">
 								<table width="100%" border="0" cellspacing="0" cellpadding="0">
 									<tr>
 										<td width="70%" align="left" class="mobile-full">
@@ -205,7 +331,7 @@
 												class="mobile-block"
 											>
 												<tr>
-													<td class="mobile-block links">
+													<td class="links">
 														<a
 															href="mailto:hello@metalno.ru"
 															style="
@@ -219,7 +345,7 @@
 															>hello@metalno.ru</a
 														>
 													</td>
-													<td class="mobile-block">
+													<td class="">
 														<a
 															href="http://www.metalno.ru"
 															style="
@@ -239,7 +365,7 @@
 										<td
 											width="30%"
 											align="right"
-											class="mobile-full mobile-center"
+											class="mobile-full mobile-block"
 											style="padding-top: 10px"
 										>
 											<a
@@ -261,9 +387,9 @@
 						</tr>
 
 						<tr>
-							<td style="padding: 60px 20px 0 20px">
+							<td style="padding: 0 20px 0 20px" class="mobile_image">
 								<img
-									src="email/images/bg1.png"
+									src="images/bg1.png"
 									alt="Миссия"
 									width="100%"
 									style="display: block; max-width: 100%"
@@ -345,14 +471,8 @@
 									cellpadding="0"
 									style="overflow: hidden"
 								>
-									<tr>
-										<!-- Карточка 1 -->
-										<td
-											width="25%"
-											valign="top"
-											style="padding: 10px"
-											class="mobile-full"
-										>
+									<tr class="grid-mobile">
+										<td width="25%" valign="top" class="mobile-full">
 											<table
 												width="100%"
 												border="0"
@@ -374,10 +494,11 @@
 															Радиаторы
 														</h4>
 														<img
-															src="email/images/card2.png"
+															src="images/card2.png"
 															alt="KZTO"
 															width="100%"
 															style="display: block"
+															class="card_image-cat"
 														/>
 														<h3
 															style="
@@ -393,12 +514,7 @@
 												</tr>
 											</table>
 										</td>
-										<td
-											width="25%"
-											valign="top"
-											style="padding: 10px"
-											class="mobile-full"
-										>
+										<td width="25%" valign="top" class="mobile-full">
 											<table
 												width="100%"
 												border="0"
@@ -420,10 +536,11 @@
 															Радиаторы
 														</h4>
 														<img
-															src="email/images/card1.png"
+															src="images/card1.png"
 															alt="Metalno"
 															width="100%"
 															style="display: block"
+															class="card_image-cat"
 														/>
 														<h3
 															style="
@@ -440,13 +557,7 @@
 												</tr>
 											</table>
 										</td>
-										<!-- Карточка 3 -->
-										<td
-											width="25%"
-											valign="top"
-											style="padding: 10px"
-											class="mobile-full"
-										>
+										<td width="25%" valign="top" class="mobile-full">
 											<table
 												width="100%"
 												border="0"
@@ -468,10 +579,11 @@
 															конвекторы
 														</h4>
 														<img
-															src="email/images/card4.png"
+															src="images/card4.png"
 															alt="ZVD"
 															width="100%"
 															style="display: block"
+															class="card_image-cat"
 														/>
 														<h3
 															style="
@@ -489,12 +601,7 @@
 											</table>
 										</td>
 										<!-- Карточка 4 -->
-										<td
-											width="25%"
-											valign="top"
-											style="padding: 10px"
-											class="mobile-full"
-										>
+										<td width="25%" valign="top" class="mobile-full">
 											<table
 												width="100%"
 												border="0"
@@ -516,10 +623,11 @@
 															Полотенцесушители
 														</h4>
 														<img
-															src="email/images/card3.png"
+															src="images/card3.png"
 															alt="Primoclima"
 															width="100%"
 															style="display: block"
+															class="card_image-cat"
 														/>
 														<h3
 															style="
@@ -541,7 +649,6 @@
 							</td>
 						</tr>
 
-						<!-- Линия разделительная 2 -->
 						<tr>
 							<td style="padding: 80px 20px" class="line_pad">
 								<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -552,11 +659,10 @@
 							</td>
 						</tr>
 
-						<!-- Section 3: Кастомизация -->
 						<tr>
 							<td style="padding: 0 20px">
 								<table width="100%" border="0" cellspacing="0" cellpadding="0">
-									<tr>
+									<tr class="mobile-x-block3">
 										<td
 											width="50%"
 											valign="top"
@@ -644,7 +750,7 @@
 										</td>
 										<td width="50%" valign="top" class="mobile-full">
 											<img
-												src="email/images/bg2.png"
+												src="images/bg2.png"
 												alt="Кастомизация"
 												width="100%"
 												style="display: block"
@@ -656,7 +762,7 @@
 						</tr>
 
 						<tr>
-							<td style="padding: 60px 20px">
+							<td style="padding: 60px 20px" class="line_paddings-mobile">
 								<table width="100%" border="0" cellspacing="0" cellpadding="0">
 									<tr>
 										<td height="2" style="background-color: #000000"></td>
@@ -668,7 +774,7 @@
 						<tr>
 							<td style="padding: 0 20px">
 								<table width="100%" border="0" cellspacing="0" cellpadding="0">
-									<tr>
+									<tr class="mobile-x">
 										<td
 											width="60%"
 											valign="top"
@@ -725,11 +831,12 @@
 												cellpadding="0"
 												align="right"
 												style="margin-bottom: 62px"
+												class="qr_image-block"
 											>
 												<tr>
 													<td align="right">
 														<img
-															src="email/images/qr.png"
+															src="images/qr.png"
 															alt="QR код"
 															width="250"
 															style="display: block; margin-left: auto"
@@ -779,6 +886,7 @@
 																			padding: 15px 25px;
 																			text-align: center;
 																		"
+																		class="button-cont"
 																	>
 																		<span
 																			style="
@@ -893,7 +1001,7 @@
 									<tr>
 										<td style="vertical-align: bottom; width: 40%">
 											<img
-												src="email/images/title.svg"
+												src="images/title.svg"
 												alt="Metalno"
 												style="width: 100%; max-width: 647px"
 											/>
